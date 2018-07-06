@@ -17,7 +17,7 @@ bot.on('message', message => {
     }
 
     if (message.content === "Salut"){
-        message.reply("Bien le bonjours, comment ça va? moi ça va et les shasse ça avance bien?. :)");
+        message.reply("Bien le bonjours, comment ça va? moi ça va et les shasses ça avance bien?. :)");
         console.log("Commande Salut effectué");
     }
 });
