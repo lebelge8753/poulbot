@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var prefix =("!")
 
 bot.on('ready', function() {
-    bot.user.setGame("Command: !help");
+    bot.user.setGame("Command: !aide");
     console.log("Connectedç");
 });
 
@@ -20,4 +20,17 @@ bot.on('message', message => {
         message.reply("Bien le bonjours, comment ça va? moi ça va. :)");
         console.log("Commande Salut effectué");
     }
+    
+    if (message.content === prefix + "aide"){
+        var embed = new Discord.RichEmbed()
+            .setTitle("Aide")
+            .setDescription("Voici la liste des commandes")
+            .addField(".!aide","!règles", true)
+            .setColor("0xFF8000")
+            .setFooter("En ésperant avoir pu vous aidez.")
+        message.channel.sendEmbed(aide);
+    }
+    
 });
+
+
