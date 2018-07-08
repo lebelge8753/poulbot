@@ -35,9 +35,9 @@ bot.on('message', message => {
         var embed = new Discord.RichEmbed()
             .setTitle("Règles")
             .setDescription("Voici les règles du discord")
-            .addField("PAS DISCRIMINATION             ","PAS D'INSULTES", true)
+            .addField("PAS DISCRIMINATION             ","PAS D4'INSULTES", true)
             .addField("PAS D'INSULTES                 ","PAS DE FLOOD", true)
-            .addField("Le @Modo en chef et le @Modo ne sont la que si il y a un soucis","Utilisez le @everyone que si vous avez l'autorisation", true)
+            .addField("Le @Modo en chef et le @Modo ne sont la que si il y a un soucis","Utilisez le @everyon que si vous avez l'autorisation", true)
             .setColor("0xDF0101")
             .setFooter("En ésperant avoir pu vous aidez.")
         message.channel.sendEmbed(embed);
