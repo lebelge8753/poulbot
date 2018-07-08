@@ -28,7 +28,7 @@ bot.on('message', message => {
             .addField(".!aide","!règles", true)
             .setColor("0xFF8000")
             .setFooter("En ésperant avoir pu vous aidez.")
-        message.channel.sendEmbed(aide);
+        message.channel.sendEmbed(embed);
     }
     
 });
