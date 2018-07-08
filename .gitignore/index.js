@@ -37,7 +37,7 @@ bot.on('message', message => {
             .setDescription("Voici les règles du discord")
             .addField("PAS DISCRIMINATION","Pas de full MAJ", true)
             .addField("PAS D'INSULTES","PAS DE FLOOD", true)
-            .addField("Le @Modo en chef et le @Modo ne sont la que si il y a un soucis","Pas de lien 18+ sauf dans #18ans-et-plus","Pas de pub", true)
+            .addField("Le @Modo en chef et le @Modo ne sont la que si il y a un soucis", true)
             .setColor("0xDF0101")
             .setFooter("En ésperant avoir pu vous aidez.")
         message.channel.sendEmbed(embed);
