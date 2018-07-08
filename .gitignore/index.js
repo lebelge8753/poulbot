@@ -31,15 +31,15 @@ bot.on('message', message => {
         message.channel.sendEmbed(embed);
     }
     
-    if (message.content === prefix + "regles"){
+    if (message.content === prefix + "règles"){
         var embed = new Discord.RichEmbed()
             .setTitle("Règles")
-            .setDescription("Voici les règles du discord")
-            .addField("-PAS DE DESCRIMINATION","-PAS D'INSULTES","-ON EST POLI ET GENTIL ENTRE NOUS", true)
+            .setDescription("Voici la liste des commandes")
+            .addField("!regles: affiches les Règles du discord","!random: pas encore acitver", true)
             .setColor("0xDF0101")
-            .setFooter("En vous remerciant de suivre ces règles pour la bonne entende sur ce discord.")
+            .setFooter("En ésperant avoir pu vous aidez.")
         message.channel.sendEmbed(embed);
-    }        
+    }
     
 });
 
