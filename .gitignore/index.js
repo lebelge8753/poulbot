@@ -11,7 +11,11 @@ bot.on('ready', function() {
 bot.login(process.env.TOKEN);
 
 
-bot.on(message.content === "Salut"){
+bot.on('message', message => {
+    if (message.content === prefix + "test"){
+        message.channel.sendMessage("test");
+        
+    }(message.content === "Salut"){
         message.reply("Bien le bonjours, comment ça va? moi ça va et les shasses ça avance bien?. :)");
         console.log("Commande Salut effectué");
     }
