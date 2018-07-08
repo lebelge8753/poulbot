@@ -25,13 +25,13 @@ bot.on('message', message => {
         var embed = new Discord.RichEmbed()
             .setTitle("Aide")
             .setDescription("Voici la liste des commandes")
-            .addField("!règles: affiche les règles du discord","!random: pas encore acitver", true)
+            .addField("!regles: affiche les règles du discord","!random: pas encore acitver", true)
             .setColor("0xDF0101")
             .setFooter("En ésperant avoir pu vous aidez.")
         message.channel.sendEmbed(embed);
     }
     
-    if (message.content === prefix + "règles"){
+    if (message.content === prefix + "regles"){
         var embed = new Discord.RichEmbed()
             .setTitle("Règles")
             .setDescription("Voici les règles du discord")
