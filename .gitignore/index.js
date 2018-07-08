@@ -31,7 +31,7 @@ bot.on('message', message => {
         message.channel.sendEmbed(embed);
     }
     
-    if (message.content === prefix + "aides"){
+    if (message.content === prefix + "règles"){
         var embed = new Discord.RichEmbed()
             .setTitle("Aide")
             .setDescription("Voici la liste des commandes")
