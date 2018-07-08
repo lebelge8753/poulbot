@@ -25,8 +25,8 @@ bot.on('message', message => {
         var embed = new Discord.RichEmbed()
             .setTitle("Aide")
             .setDescription("Voici la liste des commandes")
-            .addField(".!aide","!règles", true)
-            .setColor("0xFF8000")
+            .addField("!règles: affiche les règles du discord", true)
+            .setColor("0xDF0101")
             .setFooter("En ésperant avoir pu vous aidez.")
         message.channel.sendEmbed(embed);
     }
