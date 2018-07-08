@@ -35,8 +35,8 @@ bot.on('message', message => {
         var embed = new Discord.RichEmbed()
             .setTitle("Règles")
             .setDescription("Voici les règles du discord")
-            .addField("PAS DISCRIMINATION","PAS DE FULL MAJ", true)
-            .addField("PAS D'INSULTES","ON EST POLI ET GENTIL ENTRE NOUS", true)
+            .addField("PAS DISCRIMINATION", true)
+            .addField("PAS D'INSULTES", true)
             .setColor("0xDF0101")
             .setFooter("En ésperant avoir pu vous aidez.")
         message.channel.sendEmbed(embed);
