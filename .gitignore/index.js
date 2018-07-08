@@ -21,7 +21,8 @@ bot.on(message.content === "Salut"){
             .setDescription ("Voici la liste des commandes disponible pour PoulBot")
             .addField(".Help","Page d'aide", true)
             .addField("!règles : fait apparaitres les règles du discord", true)
+            .setColor("0xFF8000")
         message.channel.sendEmbed(embed);
-            
+    }            
         
 });
