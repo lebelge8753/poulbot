@@ -36,10 +36,6 @@ bot.on('message', message => {
             .setTitle("Règles")
             .setDescription("Voici les règles du discord")
             .addField("-PAS DE DESCRIMINATION","-PAS D'INSULTES","-ON EST POLI ET GENTIL ENTRE NOUS", true)
-            .addField("-PAS DE FLOOD","-LE @Mode en chef ET LE @Modo NE SONT LA QUE SI IL Y A UN SOUCIS", true)
-            .addField("-SI VOUS ETES PAS MODO ET QUE VOUS N'AVEZ PAS RECU L'AUTORISATION N'UTILISE PAS LE @everyone", true)
-            .addField("-IL Y A DES AMES INNOCENTES ICI DONC PAS DE LIEN 18+ ET AUTRE CONTENUE CHOQUANT SAUF DANS LE SALON #18ans-et-plus", true)
-            .addField("-PAS DE PUB", true)
             .setColor("0xDF0101")
             .setFooter("En vous remerciant de suivre ces règles pour la bonne entende sur ce discord.")
         message.channel.sendEmbed(embed);
