@@ -38,6 +38,7 @@ bot.on('message', message => {
             .addField("PAS DISCRIMINATION","Pas de full MAJ", true)
             .addField("PAS D'INSULTES","PAS DE FLOOD", true)
             .addField("Le @Modo en chef et le @Modo ne sont la que si il y a un soucis","pas de lien 18+ sauf dans le salon autorisé", true)
+            .addField("Pas de pub","et surtout prié la Pouldo shiny tout les matins", true)
             .setColor("0xDF0101")
             .setFooter("En ésperant avoir pu vous aidez.")
         message.channel.sendEmbed(embed);
