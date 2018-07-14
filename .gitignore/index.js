@@ -11,7 +11,7 @@ bot.on('ready', function() {
 bot.login(process.env.TOKEN);
 
 bot.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "accueil").send(`Bienvenue, et que la PouldoShiny soit avec toi ${member}`)
+    member.guild.channels.find("name", "accueil").send(`Bienvenue, et que la PouldoShiny soit avec toi, et passe lire les règles sinon la colére de la Pouldo risque de s'abattre sur toi ${member}`)
 })
 
 bot.on('message', message => {
