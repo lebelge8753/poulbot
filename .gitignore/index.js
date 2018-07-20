@@ -51,7 +51,7 @@ bot.on('message', message => {
         var embed = new Discord.RichEmbed()
             .setTitle("Shasse")
             .setDescription("Voici le document expliquant les différentes méthode de shasse")
-            .addField("https://docs.google.com/document/d/1zjfaisk_RC2RMflJHKYfej0Y7uO1kBYIcWeFkyc8gtE/edit?usp=sharing", true)
+            .addField("voila le lien du doc: https://docs.google.com/document/d/1zjfaisk_RC2RMflJHKYfej0Y7uO1kBYIcWeFkyc8gtE/edit?usp=sharing", true)
             .setColor("0xDF0101")
             .setFooter("En ésperant qu'il vous sois utile .")
         message.channel.sendEmbed(embed);
