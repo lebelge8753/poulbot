@@ -55,6 +55,7 @@ bot.on('message', message => {
             .setColor("0xDF0101")
             .setFooter("En ésperant qu'il vous sois utile .")
         message.channel.sendEmbed(embed);
+     }     
     
 });
 
