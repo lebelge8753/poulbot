@@ -28,7 +28,7 @@ bot.on('message', message => {
         var embed = new Discord.RichEmbed()
             .setTitle("Aide")
             .setDescription("Voici la liste des commandes")
-            .addField("!regles: affiche les règles du discord","!random: pas encore acitver", true)
+            .addField("!regles: affiche les règles du discord","!shasse: lien vers le doc de shiny hunting", true)
             .setColor("0xDF0101")
             .setFooter("En ésperant avoir pu vous aidez.")
         message.channel.sendEmbed(embed);
