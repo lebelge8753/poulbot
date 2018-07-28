@@ -61,7 +61,7 @@ bot.on('message', message => {
         try {
             get('https://aws.random.cat/meow').then(res => {
                 const embed = new Discord.RichEmbed()
-                .setDescription(`:cat: Image de chat ${message.author.userna}`)
+                .setDescription(`:cat: Image de chat ${message.author.username}`)
                 .setImage(res.body.file)
                 .setColor("0x201f1f")
                 return message.channel.send({embed});
