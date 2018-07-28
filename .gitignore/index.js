@@ -66,12 +66,7 @@ bot.on('message', message => {
             .setImage(res.body.file)
             .setColor("0x201F1F")
             return message.channel.send({embed})
-        });
-    } catch(err) {
-        return message.channel.send(error.stack);
-    }
-        break;
-        
+
 });
 
 
