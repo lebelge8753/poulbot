@@ -65,9 +65,12 @@ bot.on('message', message => {
             .setDescription(`:cat: Image de chat ${message.author.username}`)
             .setImage(res.body.file)
             .setColor("0x201F1F")
-            return message.channel.send({embed});
-   
+            return message.channel.send({embed})
         });
+    } catch(err) {
+        return message.channel.send(error.stack);
+    }
+        break;
         
 });
 
