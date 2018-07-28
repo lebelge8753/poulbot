@@ -68,9 +68,7 @@ bot.on('message', message => {
         });
          catch(err) {
          return message.channel.send(error.stack):
-     }
-            break;
-            
+           
 });
 
 
