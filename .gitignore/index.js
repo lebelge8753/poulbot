@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const {get} = require ("snekfetch");
 
 var prefix =("!")
 
@@ -57,6 +58,17 @@ bot.on('message', message => {
         message.channel.sendEmbed(embed);
      }     
     
+    case "randompoke":
+    try {
+        get('https://aws.random.cat/meow').then(res => {
+            const embed = new Discord.richEmbed()
+            .setDescription(`:cat: Image de chat ${message.author.username}`)
+            .setImage(res.body.file)
+            .setColor("0x201F1F")
+            return message.channel.send({embed});
+   
+        });
+        
 });
 
 
