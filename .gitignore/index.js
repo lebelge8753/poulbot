@@ -58,8 +58,7 @@ bot.on('message', message => {
         }     
     
       if (message.content === prefix + "oracle"){
-        var nb = Math.floor (math.random() * 100000);
-        message.channel.sendEmbed(embed);
+        var nb = Math.floor(Math.random() * 10);
     }
 
 });
