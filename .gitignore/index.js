@@ -56,6 +56,12 @@ bot.on('message', message => {
             .setFooter("En ésperant qu'il vous sois utile .")
         message.channel.sendEmbed(embed);
         }     
+    
+      if (message.content === prefix + "oracle"){
+        var nb = Math.floor (math.random() * 100000);
+        message.channel.sendEmbed(embed);
+    }
+    }
 
 });
 
