@@ -58,7 +58,7 @@ bot.on('message', message => {
         }     
     
       if (message.content === prefix + "oracle"){
-        var nb = Math.floor(Math.random() * 10);
+       var nom1 =    Math.floor(Math.random() * 100).toString(16);
     }
 
 });
