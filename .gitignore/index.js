@@ -57,9 +57,6 @@ bot.on('message', message => {
         message.channel.sendEmbed(embed);
         }     
     
- isingame = false;
-
-client.on("message", message => {
 
     if(message.content.toLowerCase() == "jeux") {
         isingame = true;
