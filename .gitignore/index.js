@@ -57,9 +57,25 @@ bot.on('message', message => {
         message.channel.sendEmbed(embed);
         }     
     
-      if (message.content === prefix + "oracle"){
-       var nom1 =    Math.floor(Math.random() * 100).toString(16);
+ isingame = false;
+
+client.on("message", message => {
+
+    if(message.content.toLowerCase() == "jeux") {
+        isingame = true;
+        var nbjeu = Math.floor(Math.random() * 10) + 1);
+        console.log(nbjeu);
+        message.channel.send({embed : {
+            color: 15844367,
+            description: "Je suis prêt ! :wink: \n Trouve le numéro auquel je pense entre 1 et 10 !"}});
+    } else if(isingame) {
+        if(message.content == nbjeu) {
+            message.channel.send('Bien joué bg !\nPour jouer de nouveau, écris "Jeux"');
+        } else {
+            message.channel.send('Perdu... Ré-essaye !');
+        }
     }
+
 
 });
 
