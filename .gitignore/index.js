@@ -61,7 +61,6 @@ bot.on('message', message => {
         var nb = Math.floor (math.random() * 100000);
         message.channel.sendEmbed(embed);
     }
-    }
 
 });
 
